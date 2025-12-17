@@ -5,9 +5,15 @@
  */
 export const loadMarkdown = async (path: string): Promise<string> => {
   try {
-    const response = await fetch(path)
+    // Get the base URL from Vite (handles GitHub Pages base path)
+    const baseUrl = import.meta.env.BASE_URL
+    // Remove leading slash from path if present, then combine with baseUrl
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path
+    const fullPath = `${baseUrl}${cleanPath}`
+    
+    const response = await fetch(fullPath)
     if (!response.ok) {
-      throw new Error(`Failed to load markdown: ${path}`)
+      throw new Error(`Failed to load markdown: ${fullPath}`)
     }
     return await response.text()
   } catch (error) {
