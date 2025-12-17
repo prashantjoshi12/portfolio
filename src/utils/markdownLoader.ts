@@ -6,7 +6,8 @@
 export const loadMarkdown = async (path: string): Promise<string> => {
   try {
     // Get the base URL from Vite (handles GitHub Pages base path)
-    const baseUrl = import.meta.env.BASE_URL
+    // BASE_URL always ends with '/', so we can safely concatenate
+    const baseUrl = import.meta.env.BASE_URL || '/'
     // Remove leading slash from path if present, then combine with baseUrl
     const cleanPath = path.startsWith('/') ? path.slice(1) : path
     const fullPath = `${baseUrl}${cleanPath}`
