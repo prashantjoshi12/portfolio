@@ -5,7 +5,6 @@
 - **TypeScript** - Type-safe JavaScript development with advanced features
 - **JavaScript** - ES6+ modern JavaScript, async/await, promises
 - **SQL** - Complex queries, joins, optimization, stored procedures
-- **PHP** - Laravel framework, object-oriented programming
 
 ## Backend Frameworks & Technologies
 
@@ -13,7 +12,6 @@
 - **Node.js** - Server-side JavaScript runtime, event-driven architecture
 - **Express.js** - Fast, unopinionated web framework for Node.js
 - **AdonisJS** - Full-featured Node.js framework
-- **Laravel** - PHP web framework with elegant syntax
 
 ## Frontend Technologies (Project Use)
 
