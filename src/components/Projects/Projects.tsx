@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import MarkdownRenderer from '../MarkdownRenderer'
+import FeaturedProject from './FeaturedProject'
 import { loadMarkdown } from '@/utils/markdownLoader'
 import './Projects.css'
 
@@ -66,10 +67,14 @@ An interactive weather dashboard that displays current conditions and forecasts 
       <div className="container">
         <h2 className="section-title">Projects</h2>
         <p className="section-subtitle">
-          A showcase of my recent work and projects I've contributed to
+          A showcase of my recent work — starting with my own product
         </p>
         <div className="projects-content">
-          <MarkdownRenderer content={content} />
+          <FeaturedProject />
+          <div className="projects-other">
+            <p className="projects-other-label">// Other Projects</p>
+            <MarkdownRenderer content={content} />
+          </div>
         </div>
       </div>
     </section>
