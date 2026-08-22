@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import MarkdownRenderer from '../MarkdownRenderer'
 import { loadMarkdown } from '@/utils/markdownLoader'
+import { injectExperienceYears } from '@/utils/experience'
 import './About.css'
 
 const About: React.FC = () => {
@@ -8,10 +9,10 @@ const About: React.FC = () => {
 
   useEffect(() => {
     loadMarkdown('/content/about.md')
-      .then(setContent)
+      .then((md) => setContent(injectExperienceYears(md)))
       .catch(() => {
         // Fallback content if markdown file doesn't exist
-        setContent(`Welcome to my portfolio! I'm a passionate developer who loves creating amazing web experiences.
+        setContent(injectExperienceYears(`Welcome to my portfolio! I'm a passionate developer with {{yearsOfExperience}} of experience who loves creating amazing web experiences.
 
 ## My Journey
 
@@ -25,7 +26,7 @@ I've been working in the tech industry for several years, focusing on building s
 
 ## Let's Connect
 
-Feel free to reach out if you'd like to collaborate or just have a chat!`)
+Feel free to reach out if you'd like to collaborate or just have a chat!`))
       })
   }, [])
 

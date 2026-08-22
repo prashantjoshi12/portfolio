@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { formatYearsOfExperience } from '@/utils/experience'
 import './Hero.css'
 
 const ROLES = [
@@ -248,7 +249,7 @@ const Hero: React.FC = () => {
         <div className="hero-stats">
           <div className="stat-card">
             <span className="stat-label">// uptime</span>
-            <span className="stat-value">3+ years</span>
+            <span className="stat-value">{formatYearsOfExperience()}</span>
           </div>
           <div className="stat-card">
             <span className="stat-label">// projects</span>
