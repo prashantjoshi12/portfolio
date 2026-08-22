@@ -1,5 +1,3 @@
-# About Me
-
 I'm **Prashant Joshi**, a Backend Developer with 3+ years of experience building scalable APIs and robust backend systems. I specialize in creating high-performance, maintainable solutions using modern technologies like NestJS, Node.js, PostgreSQL, and Redis.
 
 ## My Journey

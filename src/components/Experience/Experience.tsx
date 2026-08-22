@@ -10,9 +10,7 @@ const Experience: React.FC = () => {
     loadMarkdown('/content/experience.md')
       .then(setContent)
       .catch(() => {
-        setContent(`# Experience
-
-## Senior Developer | Company Name | 2021 - Present
+        setContent(`## Senior Developer | Company Name | 2021 - Present
 
 - Led development of multiple web applications using React and Node.js
 - Collaborated with cross-functional teams to deliver high-quality products

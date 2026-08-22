@@ -1,5 +1,3 @@
-# Skills
-
 ## Languages
 
 - **TypeScript** - Type-safe JavaScript development with advanced features

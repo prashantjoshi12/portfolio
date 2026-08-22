@@ -1,5 +1,3 @@
-# Get In Touch
-
 I'm always open to discussing new opportunities, interesting projects, or just having a chat about backend development and system architecture.
 
 ## Contact Information

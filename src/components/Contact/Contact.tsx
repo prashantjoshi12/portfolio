@@ -10,9 +10,7 @@ const Contact: React.FC = () => {
     loadMarkdown('/content/contact.md')
       .then(setContent)
       .catch(() => {
-        setContent(`# Get In Touch
-
-I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+        setContent(`I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
 
 ## Contact Information
 

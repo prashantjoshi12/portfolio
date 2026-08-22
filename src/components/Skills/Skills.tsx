@@ -10,9 +10,7 @@ const Skills: React.FC = () => {
     loadMarkdown('/content/skills.md')
       .then(setContent)
       .catch(() => {
-        setContent(`# Skills
-
-## Frontend Development
+        setContent(`## Frontend Development
 
 - **React** - Building component-based user interfaces
 - **JavaScript/TypeScript** - Modern ES6+ and type-safe development

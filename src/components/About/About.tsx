@@ -11,9 +11,7 @@ const About: React.FC = () => {
       .then(setContent)
       .catch(() => {
         // Fallback content if markdown file doesn't exist
-        setContent(`# About Me
-
-Welcome to my portfolio! I'm a passionate developer who loves creating amazing web experiences.
+        setContent(`Welcome to my portfolio! I'm a passionate developer who loves creating amazing web experiences.
 
 ## My Journey
 

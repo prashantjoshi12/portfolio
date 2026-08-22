@@ -1,5 +1,3 @@
-# Experience
-
 ## Backend Developer | Traveltekpro IT Solutions
 
 **06/2023 – Present**

@@ -10,9 +10,7 @@ const Projects: React.FC = () => {
     loadMarkdown('/content/projects.md')
       .then(setContent)
       .catch(() => {
-        setContent(`# Projects
-
-## Project 1: E-Commerce Platform
+        setContent(`## Project 1: E-Commerce Platform
 
 **Technologies:** React, Node.js, MongoDB, Stripe
 

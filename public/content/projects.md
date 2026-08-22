@@ -1,5 +1,3 @@
-# Projects
-
 ## WAAS - WhatsApp as a Service Platform
 
 **Company:** Traveltekpro IT Solutions  
